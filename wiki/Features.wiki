@@ -4,4 +4,4 @@
   * Convert from a local Xml file, or pull from an http address.
 
 =Planned features=
-  * Pull directly by retrieving the introspection Xml from a DBus service.
+  * Convert by retrieving the introspection Xml from a DBus service.
