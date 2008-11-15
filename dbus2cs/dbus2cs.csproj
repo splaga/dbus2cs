@@ -1,0 +1,91 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB4591D7-F35C-49CF-BC3A-64C6A7009EC1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dbus2cs</RootNamespace>
+    <AssemblyName>dbus2cs</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>dbus2cs</AssemblyName>
+    <RootNamespace>dbus2cs</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>dbus2cs</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <RootNamespace>dbus2cs</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dbus2cs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabStringBuilder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="testdocs\odevice\org.freesmartphone.Device.Audio.xml.in" />
+    <None Include="testdocs\odevice\org.freesmartphone.Device.Display.xml.in" />
+    <None Include="testdocs\odevice\org.freesmartphone.Device.IdleNotifier.xml.in" />
+    <None Include="testdocs\odevice\org.freesmartphone.Device.Input.xml.in" />
+    <None Include="testdocs\odevice\org.freesmartphone.Device.LED.xml.in" />
+    <None Include="testdocs\odevice\org.freesmartphone.Device.PowerControl.xml.in" />
+    <None Include="testdocs\odevice\org.freesmartphone.Device.PowerSupply.xml.in" />
+    <None Include="testdocs\odevice\org.freesmartphone.Device.RealtimeClock.xml.in" />
+    <None Include="testdocs\ophone\org.freesmartphone.Phone.Call.xml.in" />
+    <None Include="testdocs\ophone\org.freesmartphone.Phone.xml.in" />
+    <None Include="testdocs\opreferences\org.freesmartphone.Preferences.Service.xml.in" />
+    <None Include="testdocs\opreferences\org.freesmartphone.Preferences.xml.in" />
+    <None Include="testdocs\otapi\org.freesmartphone.GSM.Call.xml.in" />
+    <None Include="testdocs\otapi\org.freesmartphone.GSM.CB.xml.in" />
+    <None Include="testdocs\otapi\org.freesmartphone.GSM.Device.xml.in" />
+    <None Include="testdocs\otapi\org.freesmartphone.GSM.HZ.xml.in" />
+    <None Include="testdocs\otapi\org.freesmartphone.GSM.MUX.xml.in" />
+    <None Include="testdocs\otapi\org.freesmartphone.GSM.Network.xml.in" />
+    <None Include="testdocs\otapi\org.freesmartphone.GSM.PDP.xml.in" />
+    <None Include="testdocs\otapi\org.freesmartphone.GSM.SIM.xml.in" />
+    <None Include="testdocs\otapi\org.freesmartphone.GSM.SMS.xml.in" />
+    <None Include="testdocs\ousage\org.freesmartphone.Usage.xml.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="testdocs\hal dbus.txt" />
+    <None Include="testdocs\hal manager.txt" />
+    <None Include="introspect.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="screenshots\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
