@@ -10,6 +10,7 @@
 dbus2cs.exe filename|httpURL [-n namespace] [-o output file] [-l licensefile] [-r search:replace] [-v {{{<}}}struct>[/{{{<}}}variable>]:<new struct|variable>] [-?|help]
 Options:
         Filename of DBus introspection Xml to parse. stdin is supported via "-"
+
         -n:
                 Set namespace to use
         -o:
